@@ -117,7 +117,11 @@ a:visited {
     flex-basis: 325px;
   }
 
-  .gallery, #gallery {
+  #gallery {
+    visibility: hidden;
+  }
+
+  .gallery {
     display: none;
   }
 

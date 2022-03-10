@@ -68,6 +68,11 @@ a:visited {
     justify-content: space-between;
   }
 
+  body > header:nth-of-type(1) {
+    position: sticky;
+    top: 0;
+  }
+
   .nav_links {
     display: flex;
     flex-direction: row;
@@ -91,10 +96,14 @@ a:visited {
     background: #f1f1f1;
   }
 
+  nav {
+    width: 100%;
+  }
+
   .nav_links {
     display: flex;
     flex-direction: row;
-    justify-items: space-between;
+    justify-content: space-around;
   }
 
   .pricing {
@@ -106,9 +115,14 @@ a:visited {
   .card {
     border: solid 2px #45ADDD;
     flex-basis: 325px;
+    content: 👍;
   }
 
   .gallery, #gallery {
     display: none;
+  }
+
+  .card > ul > li:nth-child(2):after {
+    content: "👍";
   }
 }
